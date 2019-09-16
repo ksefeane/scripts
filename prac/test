@@ -1,5 +1,3 @@
-lsdfklasdjf asdlkfjlsdj
-
 w - jump to word
 b - jump back
 0 - start of line
@@ -7,7 +5,7 @@ $ - end of line
 G - last line
 A - insert at end
 V+down - select
-
+ggdG = delete all
 :set tabstop=2
 :set autoindent
 
