@@ -21,16 +21,34 @@ getName()
 	fi
 	return
 }
+getUser()
+{
+	local user=""
+	local userfile="./user.txt"
+	if [ -e "$userfile" ]; then
+		cat $userfile
+	else
+		read -p "please enter your username -> " user
+		echo $user >> $userfile
+		cat $userfile
+	fi
+	return
+}
 greeting()
 {
 	local namefile="./name.txt"
+	local userfile="./user.txt"
+	local user=""
 	local name=""
-	if [ -e "$namefile" ]; then
-		name=$(getName)
-		echo "welcome back $name.."
-	else
-		name=$(getName)
-		echo "hello $name\n"
+	if [ -e "$userfile" ]; then
+		user=$(getUser)
+		if [ -e "$namefile" ]; then
+			name=$(getName)
+			echo "welcome back $name ($user)"
+		else
+			name=$(getName)
+			echo "hello $name ($user)\n"
+		fi
 	fi
 	return
 }
@@ -53,19 +71,7 @@ getTime()
 	date "+%H:%M:%S"
 	return
 }
-getUser()
-{
-	local user=""
-	local userfile="./user.txt"
-	if [ -e "$userfile" ]; then
-		cat $userfile
-	else
-		read -p "please enter your username -> " user
-		echo $user >> $userfile
-		cat $userfile
-	fi
-	return
-}
+
 date=$(getDate)
 clock=$(getTime)
 user=$(getUser)
