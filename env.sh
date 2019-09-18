@@ -1,9 +1,10 @@
 #!/bin/zsh
 
+clear
 echo "opening configs..
 launching oh-my.sh
 
-!! after 'oh-my-zsh' install launch, type -> 'sh config.sh' & press enter
+!! after 'oh-my-zsh' installs, type -> 'sh config' & press enter
 
 "
 

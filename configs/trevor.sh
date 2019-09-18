@@ -18,6 +18,7 @@ esac
 #echo "----- Global -----";
 read -p 'Username: ' uservar;
 echo "export USER=$uservar" >> ~/.zshrc;
+echo "export USER=$uservar" >> config.sh
 
 echo "----- Setup -----";
 cp -R .vim ~/;
