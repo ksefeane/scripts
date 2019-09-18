@@ -19,3 +19,5 @@ echo "customizing oh-my-zsh"
 cp .zshrc ~
 cp $theme/candy.zsh-theme ~/.oh-my-zsh/themes/candy.zsh-theme
 sh trevor.sh
+clear
+zsh
