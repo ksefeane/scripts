@@ -9,6 +9,6 @@ launching oh-my.sh
 "
 
 mv .uninstall.sh uninstall.sh
-cd configs
+cd term_config
 
 sh oh-my.sh

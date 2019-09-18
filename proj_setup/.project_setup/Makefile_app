@@ -1,0 +1,31 @@
+//insert header
+
+NAME = //insert program name
+
+SRC = src/*
+
+LIB = libft/libft.a
+
+BUILD = gcc -Wall -Werror -Wextra -o
+
+all: $(NAME)
+
+$(NAME): $(LIB)
+	@$(BUILD) $(NAME) $(SRC) $(LIB)
+	@echo "$(NAME) created"
+
+$(LIB):
+	@make -C libft
+
+clean:
+	@rm -rf $(NAME)
+	@echo "$(NAME) deleted"
+
+fclean: clean
+	@make fclean -C libft
+
+re: clean all
+
+RE: fclean all
+
+.PHONY: all clean fclean re RE
