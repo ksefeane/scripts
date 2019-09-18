@@ -5,7 +5,7 @@ clear
 #sh trevor.sh
 
 os="`uname`"
-theme=".oh-my-zsh/themes/"
+theme="themes"
 
 echo "---- $os ----"
 
@@ -17,5 +17,5 @@ fi
 
 echo "customizing oh-my-zsh"
 cp .zshrc ~
-cp $theme/candy.zsh-theme ~/$theme/candy.zsh-theme
+cp $theme/candy.zsh-theme ~/.oh-my-zsh/themes/
 sh trevor.sh
