@@ -7,6 +7,7 @@ launching oh-my.sh
 
 "
 
+mv .uninstall.sh uninstall.sh
 cd configs
 
 sh oh-my.sh
