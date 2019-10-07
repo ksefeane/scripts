@@ -10,9 +10,11 @@ set tabstop=4
 set cindent
 set showmatch
 "set visualbell
+
 set incsearch
 set title
 set showcmd
+set omnifunc=syntaxcomplete#Complete
 "set cursorline
 set nobackup
 set noswapfile
