@@ -10,11 +10,9 @@ set tabstop=4
 set cindent
 set showmatch
 "set visualbell
-
 set incsearch
 set title
 set showcmd
-set omnifunc=syntaxcomplete#Complete
 "set cursorline
 set nobackup
 set noswapfile
@@ -27,7 +25,7 @@ se mouse+=a
 if (has("termguicolors"))
  set termguicolors
 endif
-colo monokaitasty
+"colo monokaitasty
 let g:gitgutter_map_keys = 0
 set updatetime=100
 
