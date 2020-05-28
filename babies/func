@@ -1,0 +1,62 @@
+#! /bin/bash 
+
+hello (){
+	echo hello
+}
+
+checkout (){
+	git checkout $1
+}
+
+addalias (){
+	echo "alias $1=$2" >> ${cp}/aliases
+}
+
+display (){
+	cat ${cp}/configs
+}
+
+addconfig (){
+	echo $1 >> ${cp}/configs
+}
+
+addscript (){
+	echo $1 >> ${cp}/commands
+}
+
+openconfig (){
+	vim ${cp}/configs
+}
+
+openscripts (){
+	vim ${cp}/commands
+}
+
+makefold (){
+	mkdir $1
+	cd $1
+}
+
+enter (){
+	cd $1
+	ls
+}
+
+delete (){
+	rm -rf $1
+	ls
+}
+
+mahBabies (){
+	cd ${cp}
+}
+
+push (){
+	git add -A
+	git commit -m $1
+	git push
+}
+
+upstream (){
+	git push --set-upstream origin $1
+}

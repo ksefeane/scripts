@@ -1,0 +1,36 @@
+current
+=======
+hi - say hello
+sys - systemctl
+babz - go babies
+
+[scripts]
+aa - add alias
+ac - add config
+dc - display configs
+oc - open config
+os - open scripts
+
+[git]
+switch - git checkout
+gpa - git push all
+
+[docker]
+
+[nav]
+d - delete
+D - force delete
+e - enter & display
+f - make & enter folder
+
+add
+===
+gpa - git push all
+aa - add alias
+oa - open alias
+aac - add alias commented
+as - add script
+aas - add assemble script
+c - setterm cursor on
+gs - git status
+dls - docker ls

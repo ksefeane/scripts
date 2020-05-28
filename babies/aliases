@@ -1,0 +1,33 @@
+#! /bin/bash 
+
+cp="/home/shac/.scripts/"
+source $cp/func
+
+alias hi=hello
+alias sys=systemctl
+alias switch=checkout $1
+
+#scripts
+alias aa=addalias $1 $2
+alias dc=display ${cp}
+alias ac=addconfig $1 ${cp}
+alias oc=openconfig ${cp}
+alias os=openscripts ${cp}
+
+#terminal
+alias c=setterm cursor on
+alias nap='sudo screen -D -R sh ${cp}/sandbox/off' $1 $2
+alias sudo='sudo '
+
+#nav
+alias d="rm"
+alias D=delete $1
+alias f=makefold $1
+alias e=enter $1
+alias r="fg %"
+alias babz=mahBabies
+
+#git
+alias gpa=push $1
+alias gs="git status"
+alias gup=upstream $1
